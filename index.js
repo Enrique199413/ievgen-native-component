@@ -20,16 +20,16 @@ class IevgenComponent extends HTMLElement {
             this.from = newValue;
         }
 
-        if (name === "number") {
-            this.number = newValue;
+        if (name === "age") {
+            this.age = newValue;
         }
 
-        this.div.textContent = `${this.textContentComponent} from:${this.from} number:${this.number}`;
+        this.div.textContent = `${this.textContentComponent} from:${this.from} age:${this.age}`;
         console.log('Change Properties', name, oldValue, newValue, this.oneVariable);
     }
 
     static get observedAttributes() {
-        return ['from', 'number'];
+        return ['from', 'number', 'age', 'location'];
     } 
  }
  
